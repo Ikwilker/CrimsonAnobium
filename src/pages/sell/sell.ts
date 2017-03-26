@@ -20,11 +20,11 @@ export class SellPage {
   }
 
   setData(){
-  	this.storage.set('myData', 'Hello');
+  	this.Storage.set('myData', 'Hello');
   }
 
   getData(){
-  	this.storage.get('myData').then((data) => {
+  	this.Storage.get('myData').then((data) => {
   		console.log(data);
   	})
   }
