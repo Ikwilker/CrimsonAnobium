@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
 
 /*
   Generated class for the Sell page.
@@ -14,7 +15,19 @@ import { AlertController } from 'ionic-angular';
 })
 export class SellPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alerCtrl: AlertController) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alerCtrl: AlertController, public Storage: Storage) {
+
+  }
+
+  setData(){
+  	this.storage.set('myData', 'Hello');
+  }
+
+  getData(){
+  	this.storage.get('myData').then((data) => {
+  		console.log(data);
+  	})
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SellPage');
@@ -28,4 +41,6 @@ export class SellPage {
     });
     alert.present()
   }
+
 }
+
