@@ -16,11 +16,11 @@ import { Storage } from '@ionic/storage';
 export class SellPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alerCtrl: AlertController, public Storage: Storage) {
-
+  
   }
 
   setData(){
-  	this.Storage.set('myData', 'Hello');
+  	this.Storage.set('text', 'titleSell');
   }
 
   getData(){
