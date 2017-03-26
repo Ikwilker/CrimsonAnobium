@@ -11,27 +11,27 @@
 
 <ion-item class = "butterMilk">
     <ion-label floating>Name</ion-label>
-    <ion-input type="name"></ion-input>
+    <ion-input type="text" [(ngModel)] = "titleSell"></ion-input>
   </ion-item>
 
   <ion-item class = "butterMilk">
     <ion-label floating>Class</ion-label>
-    <ion-input type="class"></ion-input>
+    <ion-input type="text" [(ngModel)] = "classSell"></ion-input>
   </ion-item>
 
   <ion-item class = "butterMilk">
     <ion-label floating>Price</ion-label>
-    <ion-input type="price"></ion-input>
+    <ion-input type="number"[(ngModel)] = "priceSell"></ion-input>
   </ion-item>
 
   <ion-item class = "butterMilk">
     <ion-label floating>Contact</ion-label>
-    <ion-input type="email"></ion-input>
+    <ion-input type="email"[(ngModel)] = "sellEmail"></ion-input>
   </ion-item>
 
   <ion-item class = "butterMilk">
     <ion-label floating>Description</ion-label>
-    <ion-input type="description"></ion-input>
+    <ion-input type="text" [(ngModel)] = "description"></ion-input>
   </ion-item>
 
   <button ion-button class = "stone" type = "submit" (click)="setData()">Create Posting</button>
