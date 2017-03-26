@@ -14,8 +14,28 @@ import { Storage } from '@ionic/storage';
   templateUrl: 'sell.html'
 })
 export class SellPage {
+  bookCred = {name: '', class: '', price: 0, email: '', desc: ''};
+  books = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alerCtrl: AlertController, public Storage: Storage) {
+
+  }
+
+  public sellBook(){
+
+  }
+
+  addBook(){
+    this.books.push(this.bookCred);
+  }
+
+  testNotice(){
+  let alert = this.alerCtrl.create({
+    title: 'Low funds',
+    message: this.bookCred.class,
+    buttons: ['Dismiss']
+  });
+  alert.present();
 
   }
 
@@ -43,4 +63,3 @@ export class SellPage {
   }
 
 }
-

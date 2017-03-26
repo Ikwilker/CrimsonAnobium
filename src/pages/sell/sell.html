@@ -9,32 +9,31 @@
 
 <ion-content padding class = "butterMilk">
 
-<ion-item class = "butterMilk">
-    <ion-label floating>Name</ion-label>
-    <ion-input type="text" [(ngModel)] = "titleSell"></ion-input>
+  <ion-item class = "butterMilk">
+    <ion-input type = "text" placeholder="Book Name" name = "name" [(ngModel)]="bookCred.name"></ion-input>
   </ion-item>
 
   <ion-item class = "butterMilk">
-    <ion-label floating>Class</ion-label>
-    <ion-input type="text" [(ngModel)] = "classSell"></ion-input>
+    <ion-input type="text" placeholder="Class Name" name="class" [(ngModel)]="bookCred.class"></ion-input>
   </ion-item>
 
   <ion-item class = "butterMilk">
     <ion-label floating>Price</ion-label>
-    <ion-input type="number"[(ngModel)] = "priceSell"></ion-input>
+    <ion-input type="number" name = "price" [(ngModel)] = "bookCred.price"></ion-input>
   </ion-item>
 
   <ion-item class = "butterMilk">
     <ion-label floating>Contact</ion-label>
-    <ion-input type="email"[(ngModel)] = "sellEmail"></ion-input>
+    <ion-input type="email" name = "email" [(ngModel)] = "bookCred.email"></ion-input>
   </ion-item>
 
   <ion-item class = "butterMilk">
     <ion-label floating>Description</ion-label>
-    <ion-input type="text" [(ngModel)] = "description"></ion-input>
+    <ion-input type="text" name = "description" [(ngModel)] = "bookCred.desc"></ion-input>
   </ion-item>
 
-  <button ion-button class = "stone" type = "submit" (click)="setData()">Create Posting</button>
-
+  <div padding>
+  <button ion-button class = "stone"  (click)="addBook()" (click)="testNotice()" block>Create Posting</button>
+</div>
 
 </ion-content>
