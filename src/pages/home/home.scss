@@ -15,6 +15,12 @@ page-home {
 	.pink{
 		background: #e8bdc4
 	}
+	.sec{
+	background: #cfdacc; 
+	 margin-left: auto;
+    margin-right: auto;
+    display: block;
+	}
 
 	h5 {
 		text-align: center;
@@ -27,10 +33,17 @@ page-home {
 	.card {
   		padding-top: 1px;
   		padding-bottom: 1px;
-  		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   		background: #cfdacc; 
   		font-family: "Georgia", times, serif;
-  		font-size: 80px;
+  		font-size: 120px;
+  }
+
+  .p{
+		font-size: 120em;
+
+  }
+  .bkgd {
+  	background-image: "books.jpg"
   }
 
 }
