@@ -1,22 +1,36 @@
 page-home {
 	.butterMilk{
-
 		background: #FAEFD4
 	}
 
 
 	.stone{
-
 		background: #688B8A
 	}
 
 	.sage{
-
 		background: #A08084
 	}
 
 	.pink{
 		background: #e8bdc4
 	}
+
+	h5 {
+		text-align: center;
+		font-size: 60px;
+		color: #688B8A;
+		font-family: "Georgia", times, serif;
+		shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	}
+
+	.card {
+  		padding-top: 1px;
+  		padding-bottom: 1px;
+  		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  		background: #cfdacc; 
+  		font-family: "Georgia", times, serif;
+  		font-size: 80px;
+  }
 
 }
