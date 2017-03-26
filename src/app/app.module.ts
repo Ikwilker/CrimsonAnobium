@@ -9,6 +9,7 @@ import { SellPage } from '../pages/sell/sell';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicStorageModule } from '@ionic/storage';
+import { ResultsPage } from '../pages/results/results';
 
 export function provideStorage() {
  return new Storage();
@@ -21,7 +22,8 @@ export function provideStorage() {
     ContactPage,
     HomePage,
     TabsPage,
-    SellPage
+    SellPage,
+    ResultsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -34,7 +36,8 @@ export function provideStorage() {
     ContactPage,
     HomePage,
     TabsPage,
-    SellPage
+    SellPage,
+    ResultsPage
   ],
   providers: [
     StatusBar,
