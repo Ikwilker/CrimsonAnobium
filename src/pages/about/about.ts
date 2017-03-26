@@ -2,6 +2,7 @@ import { Component ,Pipe, PipeTransform, Injectable} from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { NavController,  ModalController, NavParams, ViewController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
+import { ResultsPage } from '../pages/results/results';
 
 @Component({
   selector: 'page-about',
@@ -22,6 +23,11 @@ openModal(inSearch){
   let modal = this.modalCtrl.create(ModalContentPage);
   modal.present();
 }
+
+  goToResults(){
+    this.navCtrl.push(ResultsPage)
+  }
+
 */
   getData(){
   	this.Storage.get('myBooks').then((data) => {
@@ -35,28 +41,9 @@ openModal(inSearch){
 
 showPrompt() {
     let prompt = this.alertCtrl.create({
-      title: 'Login',
-      message: "Enter a name for this new album you're so keen on adding",
-      inputs: [
-        {
-          name: 'title',
-          placeholder: 'Title'
-        },
-      ],
-      buttons: [
-        {
-          text: 'Cancel',
-          handler: data => {
-            console.log('Cancel clicked');
-          }
-        },
-        {
-          text: 'Save',
-          handler: data => {
-            console.log('Saved clicked');
-          }
-        }
-      ]
+      title: 'Sorry!',
+      message: "We were not able to get this feature working but will be implemented in the near future",
+      buttons: ['OK']
     });
     prompt.present();
   }  
