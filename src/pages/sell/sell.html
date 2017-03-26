@@ -33,16 +33,13 @@
   </ion-item>
 
   <p *ngFor="let book of books">
-		{{book}}
+		{{book.class}}
 	</p>
 
   <div padding>
-  <button ion-button class = "stone"  (click)="save(bookCred)" block>Create Posting</button>
+  <button ion-button class = "stone"  (click)="save(bookCred)" (click) = "addBook(bookCred)" block>Create Posting</button>
   <ion-content class="has-header">
-  <ion-list *ngFor="let book of books" no-lines>
-    <ion-item>Title: {{ book.name }}</ion-item>
-    <ion-item>Class: {{ book.class }}</ion-item>
-  </ion-list>
+
 </ion-content>
 </div>
 

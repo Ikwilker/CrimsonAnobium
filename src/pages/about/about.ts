@@ -16,17 +16,20 @@ export class AboutPage {
   		this.items = data;
   	})
   }
-/*  
+/*
 openModal(){
   let modal = this.modalCtrl.create(ModalContentPage);
   modal.present();
 }
 */
   getData(){
+
   	this.Storage.get('myBooks').then((data) => {
   		console.log(data);
       for(let book of this.books){
-
+        if( book === null){
+       book.push(data)
+}
       }
 
   	})
