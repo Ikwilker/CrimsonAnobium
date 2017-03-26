@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Profile Settings
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -10,8 +10,28 @@
   <ion-list>
     <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
+      <ion-icon name="ios-school" item-left></ion-icon>
+      @olemiss
     </ion-item>
+
+        <ion-item>
+          <ion-label floating>Username:</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Password:</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Contact email:</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
   </ion-list>
+
+  <div padding>
+  <button ion-button color="dark" block>Edit Profile</button>
+</div>
+
 </ion-content>
