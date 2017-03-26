@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-//import { SQLite } from '@ionic-native/SQLite';
 import { TabsPage } from '../pages/tabs/tabs';
 
 
@@ -17,7 +16,8 @@ export class MyApp {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
-    /*  let db = new SQLite();
+      /*
+      let db = new SQLite();
       db.openDatabase({
                name: "data.db",
                location: "default"
@@ -30,8 +30,9 @@ export class MyApp {
            }, (error) => {
                console.error("Unable to open database", error);
            });
-           */
+          */ 
       splashScreen.hide();
     });
+
   }
 }

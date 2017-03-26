@@ -10,30 +10,35 @@
 <ion-content padding class = "butterMilk">
 
   <ion-item class = "butterMilk">
-    <ion-input type = "text" placeholder="Book Name" name = "name" [(ngModel)]="bookCred.name"></ion-input>
+    <ion-input id = "name" type = "text" placeholder="Book Name" name = "name" [(ngModel)]="bookCred.name"></ion-input>
   </ion-item>
 
   <ion-item class = "butterMilk">
-    <ion-input type="text" placeholder="Class Name" name="class" [(ngModel)]="bookCred.class"></ion-input>
+    <ion-input id = "class" type="text" placeholder="Class Name" name="class" [(ngModel)]="bookCred.class"></ion-input>
   </ion-item>
 
   <ion-item class = "butterMilk">
     <ion-label floating>Price</ion-label>
-    <ion-input type="number" name = "price" [(ngModel)] = "bookCred.price"></ion-input>
+    <ion-input id = "price" type="number" name = "price" [(ngModel)] = "bookCred.price"></ion-input>
   </ion-item>
 
   <ion-item class = "butterMilk">
     <ion-label floating>Contact</ion-label>
-    <ion-input type="email" name = "email" [(ngModel)] = "bookCred.email"></ion-input>
+    <ion-input id = "email" type="email" name = "email" [(ngModel)] = "bookCred.email"></ion-input>
   </ion-item>
 
   <ion-item class = "butterMilk">
     <ion-label floating>Description</ion-label>
-    <ion-input type="text" name = "description" [(ngModel)] = "bookCred.desc"></ion-input>
+    <ion-input id = "desc" type="text" name = "description" [(ngModel)] = "bookCred.desc"></ion-input>
   </ion-item>
 
+  <p *ngFor="let item of items">
+		{{item}}
+	</p>
+
   <div padding>
-  <button ion-button class = "stone"  (click)="addBook()" (click)="testNotice()" block>Create Posting</button>
+  <button ion-button class = "stone"  (click)="save(bookCred.name)" block>Create Posting</button>
 </div>
+
 
 </ion-content>
