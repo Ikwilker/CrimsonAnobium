@@ -18,7 +18,7 @@ export class SellPage {
   books = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alerCtrl: AlertController, public Storage: Storage) {
-
+  
   }
 
   public sellBook(){
@@ -40,7 +40,7 @@ export class SellPage {
   }
 
   setData(){
-  	this.Storage.set('myData', 'Hello');
+  	this.Storage.set('text', 'titleSell');
   }
 
   getData(){
